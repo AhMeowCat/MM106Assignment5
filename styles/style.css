@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  /* border: 1px solid red;
+  temp to help with layout */
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* This works! From https://css-tricks.com/snippets/css/transparent-background-images/ */
+
+.background {
+  position: relative;
+}
+
+.background::after {
+  content: "";
+  background: #6b98b9 url("../images/photos/springblossom.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.background2 {
+  position: relative;
+  width: 100%;
+}
+
+.background2::after {
+  content: "";
+  background: url(../images/drawings/path.png) no-repeat center center, url(../images/drawings/river.png) no-repeat center center;
+  background-size: cover;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* --Not used/Doesn't work-- From https://coder-coder.com/background-image-opacity/ 
+
+.background {
+  background: url(../images/drawings/river.png) no-repeat center center, url("../images/photos/springblossom.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+*/
+
+.topbar {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 1px;
+  padding-top: 1px;
+  display: flex;
+}
+
+#butterfly {
+  width: 4em;
+  margin: 0 20px;
+  float: left;
+  overflow: hidden;
+}
+
+header {
+  width: 30%;
+}
+
+header a {
+  width: 20%;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy, Arial;
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #698695;
+  letter-spacing: 3px;
+  padding-top: 10px;
+}
+
+nav {
+  width: 65%;
+}
+
+nav ul {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+nav li {
+  width: 25%;
+  padding: 0 2px;
+  margin: 18px 5px;
+}
+
+nav li a {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #5a5a5a;
+  margin-bottom: 15px;
+}
+
+#search {
+  width: 2em;
+  margin: 8px 15px;
+}
+
+.search {
+  width: 5%;
+  text-align: right;
+}
+
+.title {
+  width: 100%;
+  padding-bottom: 20px;
+  margin: 30px auto;
+}
+
+#sun {
+  width: 16%;
+  float: left;
+}
+
+.title h1 {
+  width: 45%;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy, Arial;
+  color: #009ED9;
+  font-size: 2.8em;
+  font-weight: 900;
+  text-align: right;
+  letter-spacing: 7px;
+}
+
+.title p {
+  width: 29%;
+  float: left;
+  overflow: hidden;
+  color: rgb(68, 63, 63);
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: right;
+  letter-spacing: 2px;
+}
+
+#flower {
+  width: 3%;
+  margin-top: 50px;
+  margin-left: 10px;
+
+}
+
+.content {
+  height: 490px;
+}
+
+.destinations {
+  width: 8em;
+  position: absolute;
+  text-align: center;
+  /*background: url(../images/icons/flower3.png) no-repeat center center;
+  background-size: cover; */
+}
+
+.destinations img {
+  width: 4em;
+  margin: 0 auto;
+}
+
+.destinations h3 {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy, Arial;
+  color: #009ED9;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.first {
+  left: 7%;
+  top: 320px;
+  z-index: 99;
+}
+
+.second {
+  left: 30%;
+  top: 680px;
+  z-index: 100;
+}
+
+.third {
+  left: 50%;
+  top: 350px;
+  z-index: 101;
+}
+
+.fourth {
+  right: 5%;
+  top: 480px;
+  z-index: 102;
+}
+
+.bottombar {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.bottombar p {
+  width: 70%;
+  color: rgb(68, 63, 63);
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#CatBunny {
+  width: 10em;
+  margin-left: 20%;
+}
+
+#boat {
+  width: 6em;
+  margin-right: 35%;
+}
+
+footer {
+  width: 100%;
+  padding: 5px;
+  background-color: #6b98b9;
+}
+
+footer ul {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+footer ul li {
+  width: 15%;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+footer ul li a,
+p {
+  font-size: 0.9em;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
